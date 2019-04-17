@@ -5,82 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-  <h1>This is a title</h1>
-  <script>
-    
-    var variable_number = 5;
-    var variable_string = 'this is a string';
+  <div class="container">
+    <h1 id="title">This is a title</h1>
+    <p id="paragraph">Under my window, a clean rasping sound   
+        When the spade sinks into gravelly ground:   
+        My father, digging. I look down</p>
+    <button id="change_button">Change</button>
 
-    const constant_number = 10;
-    console.log('The value of the constant_number is: ' +constant_number);
-    
-    if(variable_number> 10){
-      console.log('The variable number is bigger than 10');
-    }
-    else{
-      console.log('The variable number is not bigger than 10');
-    }
-
-    var array = [1, 5, 10, 'Something', true];
-    console.log('This is an array: ' +array); 
-    console.log('This is the fourth element from the array: '+array[3]);
-
-    array.forEach(element => {
-      console.log('This are each elements: '+element);
-    });
-
-    var iterator = 0;
-    while(iterator < 5){
-      console.log('Numbers from iterator: ' +iterator);
-      iterator++;
-    }
-
-    iterator = 0;
-    do{
-      console.log('Numbers from do while: '+iterator);
-      iterator++;
-    }while(iterator<5);
-
-    var hour = 10;
-    switch(hour){
-      case 10:
-        console.log('It is 10 a.m.');
-        break;
-      case 15:
-        console.log('It is 15 p.m.');
-        break;
-      default:
-        console.log('I do not know what time is it')
-    }
-
-    var numberOne = 10;
-    var numberTwo = 15;
-    function sum(){
-      return console.log('This is a simple function and it makes a sum: '+(numberOne + numberTwo));
-    }
-    sum();
-
-    function sumWithParams(firstNumber, secondNumber) {
-      return console.log('This is a function with params: '+(firstNumber + secondNumber));
-    }
-    sumWithParams(10,23);
-
-  for(var i = 0; i<=5; i++){
-    console.log('i = '+i);
-  }
-  console.log('The variable i still alive: i = '+ i +' beacuse we use var');
-
-  for(let j = 0; j<=5; j++) {
-    console.log('j = '+j);
-  }
-  console.log('The variable j is only alive inside the for');
-  
-  const arrayNumbers = [1, 2, 3];
-  arrayNumbers.push(4);
-  console.log('We add number 4 in a constant array: '+arrayNumbers);
-
-  </script>
+  </div>
+  <script src="javascript.js"></script>
 </body>
 </html>
