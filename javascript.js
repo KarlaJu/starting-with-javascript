@@ -3,6 +3,8 @@ var paragraph = document.getElementById("paragraph");
 var button = document.getElementById("change_button");
 var paragraph_class = document.getElementsByClassName("lead");
 var all_p_tags = document.querySelectorAll('p');
+var greeting = document.getElementById('greeting');
+var sum_result = document.getElementById("sum_result");
 
 console.log(h1);
 console.log(h1.innerHTML);
@@ -27,3 +29,9 @@ button.addEventListener('mouseout', function(){
 })
 
 button.onclick = change_style;
+
+var greet = name => 'Hello ' +name;
+greeting.innerHTML = greet('Alice');
+
+var result = (numberOne, numberTwo) => numberOne + numberTwo;
+sum_result.innerHTML += result(10, 20);
