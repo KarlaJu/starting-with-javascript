@@ -33,5 +33,8 @@ button.onclick = change_style;
 var greet = name => 'Hello ' +name;
 greeting.innerHTML = greet('Alice');
 
-var result = (numberOne, numberTwo) => numberOne + numberTwo;
+var result = (numberOne, numberTwo) => {
+  var numberThree = 30;
+  return numberOne + numberTwo + numberThree;
+}
 sum_result.innerHTML += result(10, 20);
