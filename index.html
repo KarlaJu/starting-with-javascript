@@ -65,7 +65,17 @@
     function sumWithParams(firstNumber, secondNumber) {
       return console.log('This is a function with params: '+(firstNumber + secondNumber));
     }
-     sumWithParams(10,23);
+    sumWithParams(10,23);
+
+  for(var i = 0; i<=5; i++){
+    console.log('i = '+i);
+  }
+  console.log('The variable i still alive: i = '+ i +' beacuse we use var');
+
+  for(let j = 0; j<=5; j++) {
+    console.log('j = '+j);
+  }
+  console.log('The variable j is only alive inside the for');
 
   </script>
 </body>
