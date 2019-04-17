@@ -23,6 +23,40 @@
       console.log('The variable number is not bigger than 10');
     }
 
+    var array = [1, 5, 10, 'Something', true];
+    console.log('This is an array: ' +array); 
+    console.log('This is the fourth element from the array: '+array[3]);
+
+    array.forEach(element => {
+      console.log('This are each elements: '+element);
+    });
+
+    var iterator = 0;
+    while(iterator < 5){
+      console.log('Numbers from iterator: ' +iterator);
+      iterator++;
+    }
+
+    iterator = 0;
+    do{
+      console.log('Numbers from do while: '+iterator);
+      iterator++;
+    }while(iterator<5);
+
+    var hour = 10;
+    switch(hour){
+      case 10:
+        console.log('It is 10 a.m.');
+        break;
+      case 15:
+        console.log('It is 15 p.m.');
+        break;
+      default:
+        console.log('I do not know what time is it')
+    }
+
+
+
   </script>
 </body>
 </html>
