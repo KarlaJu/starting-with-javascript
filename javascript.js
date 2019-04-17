@@ -14,4 +14,16 @@ function change_style (){
   paragraph.style.color = "olive";
 };
 
+button.addEventListener('click', function(){
+  console.log('You clicked the button change');
+})
+
+button.addEventListener('mouseover', function(){
+  console.log('You have passed the mouse over');
+})
+
+button.addEventListener('mouseout', function(){
+  console.log('Goodbye mouse');
+})
+
 button.onclick = change_style;
