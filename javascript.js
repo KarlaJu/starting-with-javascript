@@ -1,11 +1,11 @@
-var h1 = document.getElementById("title");
-var paragraph = document.getElementById("paragraph");
-var button = document.getElementById("change_button");
-var paragraph_class = document.getElementsByClassName("lead");
-var all_p_tags = document.querySelectorAll('p');
-var greeting = document.getElementById('greeting');
-var sum_result = document.getElementById("sum_result");
-var object = {
+let h1 = document.getElementById("title");
+let paragraph = document.getElementById("paragraph");
+let button = document.getElementById("change_button");
+let paragraph_class = document.getElementsByClassName("lead");
+let all_p_tags = document.querySelectorAll('p');
+let greeting = document.getElementById('greeting');
+let sum_result = document.getElementById("sum_result");
+let object = {
   name: 'HTML',
   long: 15,
   state: true,
@@ -14,7 +14,7 @@ var object = {
     videos: 20 
   }
 }
-var object_array = [
+let object_array = [
   {
     name: 'HTML',
     state: true
@@ -57,11 +57,11 @@ button.addEventListener('mouseout', function(){
 
 button.onclick = change_style;
 
-var greet = name => 'Hello ' +name;
+let greet = name => 'Hello ' +name;
 greeting.innerHTML = greet('Alice');
 
-var result = (numberOne, numberTwo) => {
-  var numberThree = 30;
+let result = (numberOne, numberTwo) => {
+  let numberThree = 30;
   return numberOne + numberTwo + numberThree;
 }
 sum_result.innerHTML += result(10, 20);
