@@ -6,7 +6,8 @@ let all_p_tags = document.querySelectorAll('p');
 let greeting = document.getElementById('greeting');
 let sum_result = document.getElementById("sum_result");
 let string = "Using the $ symbol, you can print a variable";
-const names_array = ['Alice', 'Eli', 'Irving', 'Olga']; 
+const names_array = ['Alice', 'Eli', 'Irving', 'Olga'];
+const user_registration = ['Alice', 23, 'Mexico', 'Developer'];
 let object = {
   name: 'HTML',
   long: 15,
@@ -76,3 +77,10 @@ function save_user(name, country, email, telephone_number = 'It was not specifie
   return `Name: ${name}, Country: ${country}, email: ${email}, Telephone number: ${telephone_number}`;
 }
 console.log(save_user('Alice', 'Mexico', 'email@example.com'));
+
+const [name, age, country, profession = 'It was not specified'] = user_registration;
+console.log(`You can see the name using this way: ${name}`);
+console.log(`The profession: ${profession}`);
+
+print_user_info = ([name, ,country]) => console.log(`${name} is from ${country}`);
+console.log(print_user_info(user_registration));
