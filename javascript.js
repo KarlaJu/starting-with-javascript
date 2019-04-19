@@ -69,6 +69,6 @@ let result = (numberOne, numberTwo) => {
 }
 sum_result.innerHTML += result(10, 20);
 
-const character_counter = names_array.map(function(name){
+const character_counter = names_array.map((name) => {
   console.log(`The name: ${name} has ${name.length} characters`);
 });
