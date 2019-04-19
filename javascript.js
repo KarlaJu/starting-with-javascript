@@ -5,6 +5,7 @@ let paragraph_class = document.getElementsByClassName("lead");
 let all_p_tags = document.querySelectorAll('p');
 let greeting = document.getElementById('greeting');
 let sum_result = document.getElementById("sum_result");
+let string = "Using the $ symbol, you can print a variable"; 
 let object = {
   name: 'HTML',
   long: 15,
@@ -27,7 +28,7 @@ let object_array = [
     name: 'JS',
     state: false
   }
-]
+];
 
 console.log(h1);
 console.log(h1.innerHTML);
@@ -35,6 +36,7 @@ console.log(all_p_tags);
 console.log('This is the our object: ',object);
 console.log('Chapters from the object: ', object.chapters);
 console.log('This is an object array: ', object_array);
+console.log(`Using template strings, a easier way to print: ${string}`);
 
 function change_style (){
   h1.innerHTML = "A new title by innerHTML";
