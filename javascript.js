@@ -5,7 +5,8 @@ let paragraph_class = document.getElementsByClassName("lead");
 let all_p_tags = document.querySelectorAll('p');
 let greeting = document.getElementById('greeting');
 let sum_result = document.getElementById("sum_result");
-let string = "Using the $ symbol, you can print a variable"; 
+let string = "Using the $ symbol, you can print a variable";
+const names_array = ['Alice', 'Eli', 'Irving', 'Olga']; 
 let object = {
   name: 'HTML',
   long: 15,
@@ -67,3 +68,7 @@ let result = (numberOne, numberTwo) => {
   return numberOne + numberTwo + numberThree;
 }
 sum_result.innerHTML += result(10, 20);
+
+const character_counter = names_array.map(function(name){
+  console.log(`The name: ${name} has ${name.length} characters`);
+});
