@@ -71,3 +71,8 @@ sum_result.innerHTML += result(10, 20);
 
 const character_counter = names_array.map(name => `The name: ${name} has ${name.length} characters`);
 console.log(character_counter);
+
+function save_user(name, country, email, telephone_number = 'It was not specified') {
+  return `Name: ${name}, Country: ${country}, email: ${email}, Telephone number: ${telephone_number}`;
+}
+console.log(save_user('Alice', 'Mexico', 'email@example.com'));
