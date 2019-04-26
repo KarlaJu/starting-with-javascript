@@ -1,9 +1,9 @@
-let user_welcome = "Ruby";
+let user_welcome = "Kaiser";
 
 console.log('--------------Conditional-----------');
 
 if(user_welcome == "Ruby"){
   console.log(`Welcome ${user_welcome}`);
-} else{
-  console.log(`Welcome User`);
+} else if(user_welcome == "Kaiser"){
+  console.log(`Welcome Kaiser`);
 }
