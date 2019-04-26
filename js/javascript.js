@@ -5,9 +5,7 @@ let paragraph_class = document.getElementsByClassName("lead");
 let all_p_tags = document.querySelectorAll('p');
 let greeting = document.getElementById('greeting');
 let sum_result = document.getElementById("sum_result");
-const names_array = ['Alice', 'Eli', 'Irving', 'Olga'];
-const user_registration = ['Alice', 23, 'Mexico', 'Developer'];
-
+const names_array = ['Alice', '23', 'Mexico', 'Developer'];
 
 console.log(h1);
 console.log(h1.innerHTML);
@@ -43,7 +41,7 @@ let result = (numberOne, numberTwo) => {
 }
 sum_result.innerHTML += result(10, 20);
 
-const character_counter = names_array.map(name => `The name: ${name} has ${name.length} characters`);
+const character_counter = names_array.map(name => `The element: ${name} has ${name.length} characters`);
 console.log(character_counter);
 
 function save_user(name, country, email, telephone_number = 'It was not specified') {
@@ -51,9 +49,5 @@ function save_user(name, country, email, telephone_number = 'It was not specifie
 }
 console.log(save_user('Alice', 'Mexico', 'email@example.com'));
 
-const [name, age, country, profession = 'It was not specified'] = user_registration;
-console.log(`You can see the name using this way: ${name}`);
-console.log(`The profession: ${profession}`);
-
 print_user_info = ([name, ,country]) => console.log(`${name} is from ${country}`);
-console.log(print_user_info(user_registration));
+console.log(print_user_info(names_array));

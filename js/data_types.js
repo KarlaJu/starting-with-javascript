@@ -28,6 +28,7 @@ let object_array = [
   }
 ];
 
+console.log('-------------Data types-------------');
 console.log(`This a numeric variable: ${numeric}`);
 console.log(`This is a string: ${string}`);
 console.log(`This is an array ${array}`);
