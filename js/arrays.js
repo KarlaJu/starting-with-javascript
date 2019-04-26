@@ -14,3 +14,4 @@ console.log(`You can add elements to the array: ${array_example}`);
 console.log(`You can see how many elements do you have in the array: ${array_example.length}`);
 console.log(`With method pop you extract the last element, so yo can't see CDMX element in array`);
 console.log(`The concatenation of two arrays: ${concatenation_of_two_arrays}`);
+console.log(`You can join the elements with a slash for example: ${array_example.join(" / ")}`);
