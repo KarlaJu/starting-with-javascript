@@ -1,4 +1,6 @@
 let iterator = 0;
+let friends_names_array = ['Alain','Roland','Eddie','Jake','Cuthbert'];
+
 console.log('-----------Loops------');
 
 for(iterator=1; iterator<=5;iterator++){
@@ -16,3 +18,7 @@ do{
   console.log(`The result using DO WHILE is: ${iterator}`);
   iterator++;
 }while(iterator <= 5);
+
+friends_names_array.forEach(name => {
+  console.log(`Each name: ${name}`);
+});
