@@ -7,6 +7,7 @@ let greeting = document.getElementById('greeting');
 let sum_result = document.getElementById("sum_result");
 const names_array = ['Alice', '23', 'Mexico', 'Developer'];
 
+console.log('--------------Functions------------');
 console.log(h1);
 console.log(h1.innerHTML);
 console.log(all_p_tags);
