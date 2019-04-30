@@ -9,3 +9,4 @@ console.log(`You can get the place of a character, in this exaple 'e': ${string_
 console.log(`If you have more than one character, like 'o', you can search for it from the place you want: ${string_song.indexOf("o", 2)}`);
 console.log(`Searching 'o' from the end: ${string_song.lastIndexOf("o")}`);
 console.log(`You can replace the text: ${string_song.replace(string_song, "I fallen in love")}`);
+console.log(`You can replace the text: ${string_song.replace("hurt", "love")}`);
