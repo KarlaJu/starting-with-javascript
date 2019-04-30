@@ -4,4 +4,4 @@ console.log('-----------String properties----------');
 console.log(`The string: ${string_song}`);
 console.log(`You can see how many characters has th string: ${string_song.length}`);
 console.log(`You can cut the string form the beginning: ${string_song.substring(15)}`);
-
+console.log(`You can cut where you want: ${string_song.substr(0, 15)}`);
